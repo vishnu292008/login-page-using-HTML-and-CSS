@@ -1,0 +1,91 @@
+/* Author : Vishnu Nandhan */
+/* Date : 29th may 2023 */
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&family=Roboto:wght@100;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body::before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(background.jpg)no-repeat center/cover;
+    font-family: 'Roboto', cursive;
+    /* opacity: 0.6; */
+    filter: blur(10px);
+
+}
+
+
+#main{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+}
+
+#username,
+#password {
+    width: 374px;
+    border-radius: 100px;
+    text-align: center;
+    margin: 10px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border: none;
+    outline: none;
+}
+h3 {
+    font-size: 24px;
+    text-align: center;
+    margin: 40px;
+    font-family: "Roboto";
+}
+
+#submit input {
+    width: 374px;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+   outline: none;
+    border-radius: 100px;
+    height: 52px;
+    margin-top: 22px;
+    position: relative;
+    left: 0px;
+  }
+  #submit input:hover{
+    box-shadow: 4px 3px 2px grey;
+    cursor: pointer;
+  }
+#bottom{
+    display: flex;
+    justify-content: center;
+
+    margin-left: 50px;
+    margin-top: 21px;
+  }
+
+#forgot{
+    margin: 1px 61px;
+}
+#bottom label{
+color: white;
+}
+#forgot a{
+    text-decoration: none;
+color: white;
+}
